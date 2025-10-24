@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+</head>
+<body>   
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter your name" id="name" name="name" required><br><br>
+        <!--placeholder attribute is used to show the text in input field until user enter something-->
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter your email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter your password" id="password" name="password" required><br><br>
+
+        <label for="GENDER">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" placeholder="Age" id="age" name="age" min="1" max="100"><br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        <label for="branch">Branch:</label>
+        <input type="radio" id="cse" name="branch" value="CSE">
+        <label for="cse">CSE</label>
+        <input type="radio" id="ece" name="branch" value="ECE">
+        <label for="ece">ECE</label>
+        <input type="radio" id="mech" name="branch" value="MECH">
+        <label for="mech">MECH</label><br><br>
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
