@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style> 
+        /* #main p {
+            color: blue;
+        }
+        #inside p{
+            background-color: yellow;
+        }
+        #main > p {
+            background-color: pink;
+
+        } 
+       /* #main + p {
+            background-color: orange;
+        } */
+        /* #main ~ p {
+            background-color: red;
+        }
+        a:link {
+            color: green;
+        }
+        a:hover {
+            color:black
+        }
+        a:active {
+            color:cornflowerblue
+        }
+        <!--a:visited {
+
+            color:purple
+        }--> */
+        #main .odd {
+        color: rgb(30, 134, 149);
+        }
+        #main p:nth-child(even) {
+            color: brown;
+        }
+         #main p::first-letter {
+            font-size: 200%;
+            color:magenta;
+         }
+         #main p::first-line {
+            font-weight: bold;
+            text-decoration: underline;
+            background-color: lightgray;
+         }
+         #main p::after{
+            content:" Read more...";
+            font-size:90%;
+         }
+
+    </style>
+</head>
+    <!--CSS COMBINATORS -->
+    <div id="main">  <!--first div-->
+        <p>
+            CSS combinators are used to define the relationship between two selectors. There are four types of combinators in CSS:
+            Descendant Combinator (space): Selects all elements that are descendants of a specified element.
+            Child Combinator (>): Selects all elements that are direct children of a specified element.
+            Adjacent Sibling Combinator (+): Selects an element that is directly after another specific element.
+            General Sibling Combinator (~): Selects all elements that are siblings of a specified element.
+        </p>
+        <p>
+            The descendant combinator is represented by a space between two selectors. For example, the selector "div p" selects all.
+        </p>
+        <p>
+            The child combinator is represented by a greater-than sign (>) between two selectors. For example, the selector "div > p" selects all
+        </p>
+        <p>
+            The adjacent sibling combinator is represented by a plus sign (+) between two selectors. For example, the selector "h1 + p" selects the first.
+        </p>
+        <div id="inside p">  <!--inside first div-->
+            <p>
+                This is inside div paragraph.
+            </p>
+    </div><!--closing first div-->
+        <p>
+            my name is puskar i am from gaya bihar.
+        </p>
+    <a href="google.com">google</a>
+<p id="main+p"></p>
+     my college name is abes engineering college.
+ </p>  
+<body>
+</body>
+</html>
