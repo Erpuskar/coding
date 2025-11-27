@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex  Layout Example</title>
+    <style>
+        body {
+            margin:0px;
+            padding:0px;
+        }
+        html, * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        main {
+            width: auto;
+            height: auto;
+            background: rgb(214, 83, 36);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+            /* flex wrap used to allow items to wrap onto multiple lines */
+        }
+        .box {
+            width: 300px;
+            height: 350px;
+            background: rgb(170, 99, 99);
+        }
+
+    
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        
+
+    </main>
+</body>
+</html>
