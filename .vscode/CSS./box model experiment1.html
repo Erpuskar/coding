@@ -1,0 +1,94 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model 3</title>
+    <style>
+        html,*{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        #main{
+            width:300px;
+            height:320px;
+            background-color: rgb(233, 170, 190);
+            border:2px solid;
+            display: flex;
+            flex-direction: column;
+        }
+        #header{
+            width:290px;
+            height:60px;
+            background:rgb(220, 198, 200);
+            border:1px solid;
+            border-color:black;
+            margin:5px;
+        }
+        #nav{
+            width:290px;
+            height:60px;
+            background:rgb(220, 198, 200);
+            border:1px solid;
+            margin:5px;
+        }
+        #main2{
+            height:130px;
+            width:290px;
+            background-color:rgb(205, 165, 169);
+            margin:5px;
+            display: flex;
+        }
+        #left{
+            height:130px;
+            width:145px;
+            background-color:rgb(220, 146, 166);
+            margin-right:5px;
+            border:0px solid;
+        }
+        .lft{
+            height:60px;
+            width:145px;
+            background-color:rgb(220, 198, 200);
+            margin-top:5px;
+            border:1px solid;
+        }
+        .lft:nth-child(1){
+            background-color: rgb(220, 198, 200);
+        }
+        #right{
+            height:125px;
+            width:145px;
+            background-color:rgb(220, 198, 200);
+            margin-top:5px;
+            margin-bottom:0px;
+            border:1px solid;
+
+        }
+        #footer{
+            height:60px;
+            width: 290px;
+            background-color:rgb(220, 198, 200);
+            border:1px solid;
+            margin:5px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="header" align="center"><h1> < header > </h1></div>
+        <div id="nav" align="center"><H1> < nav ></nav></H1></div>
+        <div id="main2">
+            <div id="left">
+                <div class="lft" align="center"><h1> < section></section> </h1></div>
+                <div class="lft" align="center"><h1> < article ></article></h1></div>
+            </div>
+            <div id="right" align="center"><h1> < aside ></aside></h1></div>
+        </div>
+        <div id="footer" align="center"><h1>< footer ></footer></h1></div>
+    </div>
+</body>
+</html>

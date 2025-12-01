@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Profile Cards</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      border: 2px solid #000;
+      max-width: 90vw;
+      margin: 40px auto;
+      padding: 30px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    .cards-row {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      width: 100%;
+    }
+    .card {
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      border-radius: 10px;
+      width: 280px;
+      text-align: center;
+      padding: 32px 10px 20px 10px;
+      margin: 0 10px;
+    }
+    .avatar {
+      background: #15aac4;
+      color: #fff;
+      font-size: 1.4em;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 90px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px auto;
+    }
+    .card h3 {
+      margin: 0 0 4px 0;
+      font-weight: bold;
+    }
+    .info {
+      font-size: 1.08em;
+      margin-bottom: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cards-row">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="avatar">PK</div>
+        <h3>Puskar Kumar</h3>
+        <div class="info">B.Tech - CSE</div>
+        <div class="info">Roll No: 25B154102</div>
+        <div class="info">1st Year</div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="avatar">AK</div>
+        <h3>Ankit Kumar</h3>
+        <div class="info">B.Tech - IT</div>
+        <div class="info">Roll No: 25B154103</div>
+        <div class="info">1st Year</div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="avatar">RK</div>
+        <h3>Rohit Kumar</h3>
+        <div class="info">B.Tech - ECE</div>
+        <div class="info">Roll No: 25B154104</div>
+        <div class="info">1st Year</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
